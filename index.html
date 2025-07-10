@@ -589,7 +589,7 @@
       <span id="api-status-text">API Connected</span>
       <div id="status-dot" class="status-dot"></div>
     </div>
-    <button id="theme-toggle" class="icon-button">🌓</button>
+    <button id="theme-toggle" class="icon-button">🌙</button>
   </header>
 
   <div class="chat-container">
@@ -860,7 +860,7 @@
       document.body.className = dark ? 'dark' : 'light';
       
       // Update theme icon
-      themeBtn.textContent = dark ? '🌓' : '☀️';
+      themeBtn.textContent = dark ? '☀️' : '🌙';
       
       // Save preference to localStorage
       localStorage.setItem('theme', dark ? 'dark' : 'light');
@@ -913,7 +913,7 @@
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme === 'light') {
         document.body.className = 'light';
-        themeBtn.textContent = '☀️';
+        themeBtn.textContent = '🌙';
         dark = false;
       }
       
